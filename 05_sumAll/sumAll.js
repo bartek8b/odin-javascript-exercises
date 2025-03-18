@@ -2,6 +2,7 @@ const sumAll = function(num1, num2) {
     let sum = 0;
 
     //The below should be uncommented to the function trasform "number" to Number
+    // Math.floor before Number can be adder for even better functionality
     // num1 = Number(num1);
     // num2 = Number(num2);
 
