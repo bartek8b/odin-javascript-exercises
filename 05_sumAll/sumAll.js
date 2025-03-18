@@ -17,22 +17,22 @@ const sumAll = function(num1, num2) {
     }
     else{
         if(num1 === num2) {
-        sum = num1;
-        return sum;
-    }
-    else if (num1 > num2){
-        for(i = num2; i <= num1; i++){
-            sum += i;
+            sum = num1;
+            return sum;
         }
-        return sum;
-    }
-    else if (num2 > num1){
-        for(i = num1; i <= num2; i++){
+        else if (num1 > num2){
+            for(i = num2; i <= num1; i++){
             sum += i;
-        }
+            }
         return sum;
-    }
-}
+        }
+        else if (num2 > num1){
+            for(i = num1; i <= num2; i++){
+            sum += i;
+            }
+        return sum;
+        }
+    }       
 
 };
 
