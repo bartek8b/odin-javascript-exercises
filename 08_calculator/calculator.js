@@ -24,9 +24,6 @@ const factorial = function(num) {
     if(num !== 0){
       result *= i;
     }
-    else{
-      result = 1;
-    }
   }
   return result;
 };
