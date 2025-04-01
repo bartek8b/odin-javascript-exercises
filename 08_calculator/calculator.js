@@ -10,16 +10,25 @@ const sum = function(array) {
   return array.reduce((accumulator, item) =>  accumulator + item, 0)
 }
 
-const multiply = function() {
-
+const multiply = function(array ) {
+  return array.reduce((accumulator, item) =>  accumulator * item, 1)
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return a ** b;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let result = 1;
+	for(let i = num; i > 1; i--){
+    if(num !== 0){
+      result *= i;
+    }
+    else{
+      result = 1;
+    }
+  }
+  return result;
 };
 
 // Do not edit below this line
