@@ -1,13 +1,17 @@
 const fibonacci = function(num) {
-    const array = [1, 1];    
+
+    const sequence = [1, 1];
 
     num = Number(num);
 
+    //Push the proper num of fibonacci numbers into the array
     if(!(num <= 2)){
         for(let i = 0; i < num; i++){
-            array.push(array[i] + array [i + 1]);            
+            sequence.push(sequence[i] + sequence [i + 1]);      
         }
     }
+
+    //Default cases
     else{
         if(num === 0){
             return 0;
@@ -15,9 +19,9 @@ const fibonacci = function(num) {
         else if(num < 0){
             return "OOPS";
         }
-    }
-    
-    return array[num - 1];
+    }    
+
+    return sequence[num - 1];
 };
 
 // Do not edit below this line
