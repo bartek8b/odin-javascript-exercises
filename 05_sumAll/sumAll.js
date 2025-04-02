@@ -21,7 +21,7 @@ const sumAll = function(num1, num2) {
             return sum;
         }
         else if (num1 > num2){
-            for(i = num2; i <= num1; i++){
+            for(let i = num2; i <= num1; i++){
             sum += i;
             }
         return sum;
