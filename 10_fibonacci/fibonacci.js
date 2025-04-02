@@ -4,9 +4,9 @@ const fibonacci = function(num) {
 
     num = Number(num);
 
-    //Push the proper num of fibonacci numbers into the array
+    //Push the proper num of fibonacci numbers into the array, num - 2 because 2 items are already in the Array
     if(!(num <= 2)){
-        for(let i = 0; i < num; i++){
+        for(let i = 0; i < num - 2; i++){
             sequence.push(sequence[i] + sequence [i + 1]);      
         }
     }
